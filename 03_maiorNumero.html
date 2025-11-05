@@ -8,9 +8,18 @@
 
     //ENTRADA
 
+    alert(`Informe 5 números:`);
+    let lista = [];
+    const um = Number(prompt(`Informe o primeiro número`));
+    const dois = Number(prompt(`Informe o segundo número`));
+    const tres = Number(prompt(`Informe o terceiro número`));
+    const quatro = Number(prompt(`Informe o quarto número`));
+    const cinco = Number(prompt(`Informe o quinto número`));
+    lista.push(um, dois, tres, quatro, cinco);
     
     //PROCESSAMENTO
 
+    alert(Math.max(...lista));
     
     //SAÍDA
 
