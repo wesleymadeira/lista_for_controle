@@ -8,10 +8,25 @@
 
     //ENTRADA
     
+    const quantidade = Number(prompt(`Informe quantas notas o aluno obteve`));
+    let lista = [];
+    let soma = 0
 
     //PROCESSAMENTO
     
+    for (let nota = 1; nota <= quantidade; nota ++) {
+        let cada = Number(prompt(`Informe as notas do aluno. (Nota ${nota})`));
+        lista.push(cada);
+    }
+
+    for (let num of lista) {
+        soma = soma + num;
+    }
+
+    soma = soma / quantidade;
 
     //SAÍDA
+
+    document.write(`A média do aluno é: ${soma}`);
 
 </script>
