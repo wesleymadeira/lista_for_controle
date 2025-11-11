@@ -7,10 +7,27 @@
 
     //ENTRADA
 
+    const numI = Number(prompt(`Informe o número inicial`));
+    const numF = Number(prompt(`Informe o número final`));
+    let pares = [];
+    let impares = [];
     
     //PROCESSAMENTO
 
+    if (numI >= numF) {
+        alert(`Erro. O número incial precisa ser maior que o número final`);
+    } else {
+        for (let i = numI; i = numF; i++) {
+            if (i % 2 == 0) {
+                pares.push(i);
+            } else {
+                impares.push(i);
+            }
+        }
+    }
     
     //SAÍDA
+
+    alert(`Números pares entre os números informados: ${pares.join(", ")} Números ímpares entre os números informados: ${impares.join(", ")}`);
 
 </script>

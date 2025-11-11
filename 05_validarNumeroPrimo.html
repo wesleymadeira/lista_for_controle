@@ -7,10 +7,27 @@
 
     //ENTRADA
 
+    const user = Number(prompt(`Informe um número`));
+    let valor;
 
     //PROCESSAMENTO
 
+    if (user < 2) {
+        alert(`Números menores que 2 não são primos. Informe outro número`)
+    } else {
+
+        for (let i = 2; i < user; i++) {
+            if (user % i === 0) {
+                valor = false
+            } else {
+                valor = true
+            }
+        }
+
+    }
 
     //SAÍDA
+
+    
 
 </script>
