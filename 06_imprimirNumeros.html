@@ -15,19 +15,19 @@
     //PROCESSAMENTO
 
     if (numI >= numF) {
-        alert(`Erro. O número incial precisa ser maior que o número final`);
+        alert(`Erro. O número incial precisa ser menor que o número final`);
     } else {
-        for (let i = numI; i = numF; i++) {
+        for (let i = numI; i <= numF; i++) {
             if (i % 2 == 0) {
                 pares.push(i);
             } else {
                 impares.push(i);
             }
         }
+        
+    alert(`Números pares entre os números informados: ${pares.join(", ")} Números ímpares entre os números informados: ${impares.join(", ")}`);
     }
     
     //SAÍDA
-
-    alert(`Números pares entre os números informados: ${pares.join(", ")} Números ímpares entre os números informados: ${impares.join(", ")}`);
 
 </script>
