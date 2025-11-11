@@ -8,7 +8,7 @@
     //ENTRADA
 
     const user = Number(prompt(`Informe um número`));
-    let valor;
+    let valor = true;
 
     //PROCESSAMENTO
 
@@ -16,11 +16,9 @@
         alert(`Números menores que 2 não são primos. Informe outro número`)
     } else {
 
-        for (let i = 2; i < user; i++) {
+        for (let i = 2; i <= Math.sqrt(user); i++) {
             if (user % i === 0) {
                 valor = false
-            } else {
-                valor = true
             }
         }
 
@@ -28,6 +26,10 @@
 
     //SAÍDA
 
-    
+    if (valor == true) {
+        alert(`O número ${user} é primo!`);
+    } else {
+        alert(`O número ${user} não é primo!`);
+    }
 
 </script>
