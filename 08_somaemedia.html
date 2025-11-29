@@ -7,10 +7,26 @@
 
     //ENTRADA
 
+    let lista = [];
+    let num1 = Number(prompt(`Informe um número. 1`));
+    let num2 = Number(prompt(`Informe um número. 2`));
+    let num3 = Number(prompt(`Informe um número. 3`));
+    let num4 = Number(prompt(`Informe um número. 4`));
+    let num5 = Number(prompt(`Informe um número. 5`));
+    lista.push(num1, num2, num3, num4, num5);
+    let soma = 0;
+    let media = soma
 
     //PROCESSAMENTO
 
+    for (let num of lista) {
+        soma = soma + num
+    }
+
+    media = soma / lista.length; 
 
     //SAÍDA
+
+    alert(`A soma dos números é ${soma} e a média dos números é ${media}`);
 
 </script>
