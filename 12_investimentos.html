@@ -6,10 +6,18 @@
 
     //ENTRADA
 
+    let investimento = 1000;
+    let dia = 0;
 
     //PROCESSAMENTO
 
+    for (let i = 1; investimento <= 2000; i++) {
+        investimento = investimento * 1.02;
+        dia = dia + 1;
+    }
 
     //SAÍDA
+
+    alert(`Demorará ${dia} dias para alcançar R$2000.`)
 
 </script>
