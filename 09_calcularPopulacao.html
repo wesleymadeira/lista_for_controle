@@ -13,15 +13,15 @@
     //PROCESSAMENTO
     
     for (let i = 1; i <= 5; i++) {
-        um = um *  0.15;
+        um = um *  1.015;
     }
 
     for (let x = 1; x <= 10; x++) {
-        dois = dois * 0.15;
+        dois = dois * 1.015;
     } 
 
     //SAÍDA
 
-    alert(`Depois de 5 anos a cidade terá ${um.toFixed(2)} habitantes, e depois de 10 anos a cidade terá ${dois.toFixed(2)} habitantes`);
+    alert(`Depois de 5 anos a cidade terá ${Math.floor(um)} habitantes, e depois de 10 anos a cidade terá ${Math.floor(dois)} habitantes`);
 
 </script>
